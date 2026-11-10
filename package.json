@@ -1,0 +1,46 @@
+{
+  "name": "agentfetch-cli",
+  "version": "0.1.0",
+  "description": "AgentFetch CLI: live web pages as clean Markdown, text or HTML in your terminal, through the Live Web Data API. The commands follow the live API spec.",
+  "keywords": [
+    "cli",
+    "web-scraping",
+    "markdown",
+    "llm",
+    "ai-agents",
+    "rag",
+    "mcp",
+    "live-web-data",
+    "agentfetch"
+  ],
+  "homepage": "https://agentfetch.live",
+  "bugs": {
+    "url": "https://github.com/agentfetch-live/cli/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agentfetch-live/cli.git"
+  },
+  "license": "MIT",
+  "author": "Teneo Labs Inc.",
+  "type": "module",
+  "bin": {
+    "agentfetch": "bin/cli.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "openapi.json",
+    "brand.json"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "sync-spec": "node scripts/sync-spec.js"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
