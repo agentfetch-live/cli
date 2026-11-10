@@ -8,8 +8,8 @@ It is the command line client for the [Live Web Data API](https://agentfetch.liv
 ## Quick start
 
 ```bash
-npx agentfetch-cli login                                   # paste your API key (not echoed)
-npx agentfetch-cli fetch https://example.com -o text       # the page as Markdown
+npx @agentfetch-live/cli login                                   # paste your API key (not echoed)
+npx @agentfetch-live/cli fetch https://example.com -o text       # the page as Markdown
 ```
 
 Get a key at [agentfetch.live](https://agentfetch.live). Node.js 18 or later.
@@ -17,7 +17,7 @@ Get a key at [agentfetch.live](https://agentfetch.live). Node.js 18 or later.
 ## Install
 
 ```bash
-npm install -g agentfetch-cli
+npm install -g @agentfetch-live/cli
 agentfetch --help
 ```
 
