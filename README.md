@@ -68,7 +68,8 @@ Requests and your key only ever go to the base URL, never to a server named in t
 ## Links
 
 - [agentfetch.live](https://agentfetch.live)
-- [Docs](https://agentfetch.live/docs)
+- [CLI docs](https://agentfetch.live/docs/cli)
+- [API docs](https://agentfetch.live/docs)
 - [API spec](https://livewebdata.com/openapi.json)
 
 ## License
