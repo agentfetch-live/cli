@@ -22,7 +22,7 @@
     "url": "git+https://github.com/agentfetch-live/cli.git"
   },
   "license": "MIT",
-  "author": "Teneo Labs Inc.",
+  "author": "agentfetch.live",
   "type": "module",
   "bin": {
     "agentfetch": "bin/cli.js"
