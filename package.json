@@ -1,6 +1,6 @@
 {
   "name": "@agentfetch-live/cli",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "AgentFetch CLI: live web pages as clean Markdown, text or HTML in your terminal, through the AgentFetch API. The commands follow the live API spec.",
   "keywords": [
     "cli",
