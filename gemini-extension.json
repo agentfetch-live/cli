@@ -1,0 +1,21 @@
+{
+  "name": "agentfetch",
+  "version": "0.1.0",
+  "description": "Fetch public web pages live as clean Markdown, text or HTML through the AgentFetch API: its remote MCP server and the agentfetch CLI.",
+  "mcpServers": {
+    "agentfetch": {
+      "httpUrl": "https://agentfetch.live/mcp",
+      "headers": {
+        "Authorization": "Bearer ${AGENTFETCH_API_KEY}"
+      }
+    }
+  },
+  "settings": [
+    {
+      "name": "API key",
+      "description": "Your AgentFetch API key, from https://agentfetch.live",
+      "envVar": "AGENTFETCH_API_KEY",
+      "sensitive": true
+    }
+  ]
+}

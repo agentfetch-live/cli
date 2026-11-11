@@ -36,6 +36,35 @@ agentfetch fetch --help                                           # every option
 A fetch that is still running after about 100 seconds is collected automatically with the same
 `Idempotency-Key`, so it is charged once.
 
+## MCP server
+
+The AgentFetch API is also a remote MCP server (Streamable HTTP) at `https://agentfetch.live/mcp`, with the tools
+`get_page_contents` and `get_account_status`. It takes the same API key as a bearer token.
+
+```bash
+claude mcp add --transport http agentfetch https://agentfetch.live/mcp \
+  --header "Authorization: Bearer $AGENTFETCH_API_KEY"
+```
+
+Any other client: URL `https://agentfetch.live/mcp`, header `Authorization: Bearer <key>`. Config for Cursor, VS Code and
+Claude Desktop: [MCP docs](https://agentfetch.live/docs/mcp). The server's entry for the MCP Registry is [server.json](server.json)
+(`live.agentfetch/agentfetch`).
+
+## Agent plugin and skill
+
+This repo is also a plugin for Claude Code, Grok Build and Gemini CLI, and holds an agent skill. Each one connects the
+MCP server above and teaches the agent when to fetch a page with it or with `agentfetch`.
+
+```bash
+npx skills add agentfetch-live/cli                                    # the skill, for any agent that reads SKILL.md
+claude plugin marketplace add agentfetch-live/cli && claude plugin install agentfetch@agentfetch
+gemini extensions install https://github.com/agentfetch-live/cli
+```
+
+Network and credentials: the plugin calls `https://agentfetch.live/mcp` only, and the CLI `https://agentfetch.live/api` and
+`https://agentfetch.live/openapi.json`. Both need one credential, your AgentFetch API key, read from `AGENTFETCH_API_KEY`. No hooks, no
+scripts run on install.
+
 ## The commands follow the live API
 
 `agentfetch` builds its commands and options from the API's OpenAPI document at

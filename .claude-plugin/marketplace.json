@@ -1,0 +1,17 @@
+{
+  "name": "agentfetch",
+  "owner": {
+    "name": "AgentFetch",
+    "url": "https://agentfetch.live"
+  },
+  "metadata": {
+    "description": "The AgentFetch plugin: AgentFetch API MCP server and skill."
+  },
+  "plugins": [
+    {
+      "name": "agentfetch",
+      "source": "./",
+      "description": "Fetch public web pages live as clean Markdown, text or HTML through the AgentFetch API: its remote MCP server and the agentfetch CLI."
+    }
+  ]
+}

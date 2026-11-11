@@ -1,0 +1,19 @@
+{
+  "name": "agentfetch",
+  "version": "0.1.0",
+  "description": "Fetch public web pages live as clean Markdown, text or HTML through the AgentFetch API: its remote MCP server and the agentfetch CLI.",
+  "author": {
+    "name": "AgentFetch",
+    "url": "https://agentfetch.live"
+  },
+  "homepage": "https://agentfetch.live",
+  "repository": "https://github.com/agentfetch-live/cli",
+  "license": "MIT",
+  "keywords": [
+    "agentfetch",
+    "web-fetch",
+    "markdown",
+    "mcp",
+    "cli"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "agentfetch": {
+      "type": "http",
+      "url": "https://agentfetch.live/mcp",
+      "headers": {
+        "Authorization": "Bearer ${AGENTFETCH_API_KEY}"
+      }
+    }
+  }
+}
