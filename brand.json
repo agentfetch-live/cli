@@ -8,7 +8,8 @@
   "repo": "cli",
   "siteUrl": "https://agentfetch.live",
   "docsUrl": "https://agentfetch.live/docs",
-  "apiName": "Live Web Data API",
-  "apiBaseUrl": "https://livewebdata.com/api",
-  "specUrl": "https://livewebdata.com/openapi.json"
+  "apiName": "AgentFetch API",
+  "envPrefix": "AGENTFETCH",
+  "apiBaseUrl": "https://agentfetch.live/api",
+  "specUrl": "https://agentfetch.live/openapi.json"
 }
