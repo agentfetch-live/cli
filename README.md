@@ -61,9 +61,10 @@ claude plugin marketplace add agentfetch-live/cli && claude plugin install agent
 gemini extensions install https://github.com/agentfetch-live/cli
 ```
 
-Network and credentials: the plugin calls `https://agentfetch.live/mcp` only, and the CLI `https://agentfetch.live/api` and
-`https://agentfetch.live/openapi.json`. Both need one credential, your AgentFetch API key, read from `AGENTFETCH_API_KEY`. No hooks, no
-scripts run on install.
+Network and credentials: the plugin calls `https://agentfetch.live/mcp` only. The CLI calls `https://agentfetch.live/api` and
+`https://agentfetch.live/openapi.json`, and `https://registry.npmjs.org` (`npx` and a once-a-day update check, off with
+`AGENTFETCH_NO_UPDATE_NOTIFIER=1`). Both need one credential, your AgentFetch API key,
+read from `AGENTFETCH_API_KEY` or saved by `agentfetch login`. No hooks, no scripts run on install.
 
 ## The commands follow the live API
 
