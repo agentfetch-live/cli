@@ -1,7 +1,5 @@
 # AgentFetch CLI
 
-Field notes on giving AI agents web access they can actually use.
-
 `agentfetch` fetches live web pages as clean Markdown, text or HTML, straight from your terminal or your agent's shell.
 It is the command line client for the [AgentFetch API](https://agentfetch.live).
 
